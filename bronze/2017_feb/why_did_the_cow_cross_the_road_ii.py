@@ -1,3 +1,4 @@
+# https://usaco.org/index.php?page=viewproblem2&cpid=712
 import sys
 import os
 
