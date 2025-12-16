@@ -1,0 +1,1 @@
+{"name": "Local: milk_factory", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2019_open/milk_factory.py", "tests": [{"id": 1765929375134, "input": "3\n1 2\n3 2", "output": "2"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2019_open/milk_factory.py", "group": "local", "local": true}

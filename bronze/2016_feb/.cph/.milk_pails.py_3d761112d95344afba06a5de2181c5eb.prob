@@ -1,0 +1,1 @@
+{"name": "Local: milk_pails", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2016_feb/milk_pails.py", "tests": [{"id": 1765929375060, "input": "17 25 77", "output": "76"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2016_feb/milk_pails.py", "group": "local", "local": true}

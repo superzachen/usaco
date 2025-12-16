@@ -1,0 +1,1 @@
+{"name": "Local: taming_the_herd", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2018_feb/taming_the_herd.py", "tests": [{"id": 1765929375099, "input": "4\n-1 -1 -1 1", "output": "2 3"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2018_feb/taming_the_herd.py", "group": "local", "local": true}

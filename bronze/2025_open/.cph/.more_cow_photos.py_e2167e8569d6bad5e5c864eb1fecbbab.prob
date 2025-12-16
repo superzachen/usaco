@@ -1,0 +1,1 @@
+{"name":"Local: more_cow_photos","url":"/Users/tianxiang_chen/code/github/usaco/bronze/2025_open/more_cow_photos.py","tests":[{"id":1765929375260,"input":"2\n4\n1 1 2 3\n4\n3 3 2 1","output":"3\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/tianxiang_chen/code/github/usaco/bronze/2025_open/more_cow_photos.py","group":"local","local":true}

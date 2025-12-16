@@ -1,0 +1,1 @@
+{"name": "Local: photoshoot", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2020_jan/photoshoot.py", "tests": [{"id": 1765929375147, "input": "5\n4 6 7 6", "output": "3 1 5 2 4"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2020_jan/photoshoot.py", "group": "local", "local": true}

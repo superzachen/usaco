@@ -1,0 +1,1 @@
+{"name": "Local: the_lost_cow", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2017_open/the_lost_cow.py", "tests": [{"id": 1765929375091, "input": "3 6", "output": "9"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2017_open/the_lost_cow.py", "group": "local", "local": true}

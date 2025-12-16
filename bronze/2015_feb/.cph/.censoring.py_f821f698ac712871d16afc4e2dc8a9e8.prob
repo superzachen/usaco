@@ -1,0 +1,1 @@
+{"name": "Local: censoring", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2015_feb/censoring.py", "tests": [{"id": 1765929375033, "input": "whatthemomooofun\nmoo", "output": "whatthefun"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2015_feb/censoring.py", "group": "local", "local": true}

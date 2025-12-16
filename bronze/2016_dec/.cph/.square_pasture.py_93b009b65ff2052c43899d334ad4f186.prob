@@ -1,0 +1,1 @@
+{"name": "Local: square_pasture", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2016_dec/square_pasture.py", "tests": [{"id": 1765929375054, "input": "6 6 8 8\n1 8 4 9", "output": "49"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2016_dec/square_pasture.py", "group": "local", "local": true}

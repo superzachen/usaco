@@ -1,0 +1,1 @@
+{"name": "Local: cow_jog", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2014_dec/cow_jog.py", "tests": [{"id": 1765929375020, "input": "5\n0 1\n1 2\n2 3\n3 2\n6 1", "output": "2"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2014_dec/cow_jog.py", "group": "local", "local": true}

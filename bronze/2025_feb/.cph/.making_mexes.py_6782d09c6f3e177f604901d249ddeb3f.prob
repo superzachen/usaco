@@ -1,0 +1,1 @@
+{"name": "Local: making_mexes", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2025_feb/making_mexes.py", "tests": [{"id": 1765929375246, "input": "4\n2 2 2 0", "output": "1\n0\n3\n1\n2"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2025_feb/making_mexes.py", "group": "local", "local": true}

@@ -1,0 +1,1 @@
+{"name": "Local: hoofball", "url": "/Users/tianxiang_chen/code/github/usaco/bronze/2018_feb/hoofball.py", "tests": [{"id": 1765929375098, "input": "5\n7 1 3 11 4", "output": "2"}], "interactive": false, "memoryLimit": 1024, "timeLimit": 3000, "srcPath": "/Users/tianxiang_chen/code/github/usaco/bronze/2018_feb/hoofball.py", "group": "local", "local": true}
