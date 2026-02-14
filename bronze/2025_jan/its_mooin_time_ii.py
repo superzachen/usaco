@@ -31,3 +31,26 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+N = read_int()
+stream = read_ints()
+total_remaining = [0] * (N + 1)
+for val in stream:
+    total_remaining[val] += 1
+ 
+seen_on_left = [0] * (N + 1)
+total_moos = 0
+unique_chars_seen = 0
+ 
+for i in range(N):
+    current_val = stream[i]
+    if total_remaining[current_val] == 2:
+        is_b_already_in_prefix = (seen_on_left[current_val] > 0)
+        total_moos += unique_chars_seen - is_b_already_in_prefix
+    total_remaining[current_val] -= 1
+    
+    if seen_on_left[current_val] == 0:
+        unique_chars_seen += 1 
+        
+    seen_on_left[current_val] += 1
+ 
+print(total_moos)

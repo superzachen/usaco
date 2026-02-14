@@ -31,3 +31,25 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+N, M = read_ints()
+data = [read_str() for _ in range(N)]
+wins = [[0] * N for _ in range(N)]
+ 
+for i in range(N):
+    for j in range(i):
+        if data[i][j] != "D":
+            if data[i][j] == "W":
+                wins[i][j] = 1
+            else:
+                wins[j][i] = 1
+ 
+for _ in range(M):
+    x, y = map(lambda x: int(x) - 1, read_ints())
+    winning = 0
+    for b in range(N):
+        winning += wins[b][x] and wins[b][y]
+    
+    total_playable_pairs = N ** 2
+    losing_pairs = (N-winning) ** 2
+    
+    print(total_playable_pairs - losing_pairs)

@@ -30,4 +30,3 @@ def read_ints():
 def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
-

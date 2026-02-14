@@ -31,3 +31,22 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+    
+n = (read_ints())[0]
+cows = read_ints()
+canes = read_ints()
+    
+for cane_height in canes:
+    current_base = 0
+    current_top = cane_height
+        
+    for i in range(n):
+        if cows[i] > current_base:
+            eat_to = min(cows[i], current_top)
+            amount_eaten = eat_to - current_base
+            cows[i] += amount_eaten
+            current_base = eat_to
+        if current_base >= current_top:
+            break
+for h in cows:
+    print(h)

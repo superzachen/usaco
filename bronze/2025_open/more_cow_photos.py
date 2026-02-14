@@ -31,3 +31,22 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+t = read_int()
+for _ in range(t):
+    n = read_int()
+    cow_count = [0] * (n+1)
+    cows = read_ints()
+    for cow in cows:
+        cow_count[cow] += 1
+    final = 1
+    canidate = 1
+    for i in range(len(cow_count)):
+        if cow_count[i] > 0:
+            final = canidate
+            if cow_count[i] >= 2:
+                canidate += 2
+    print(final)
+
+            
+               
+    
