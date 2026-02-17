@@ -31,3 +31,7 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+t = read_int()
+for _ in range(t):
+	beg = read_int()
+	print('E' if beg[-1] == '0' else 'B')

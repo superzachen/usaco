@@ -31,3 +31,20 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+def alg(N):
+    digits = 0
+    while 10**digits < N:
+        digits += 1
+    
+    answer = 0
+    for curdigits in range(1, digits+1):
+        upper = int('5'+'0'*(curdigits-1))-1
+        upper = min(N, upper)  
+        lower = int('4'*curdigits)
+        answer += max(0, upper - lower)
+    return answer
+ 
+T = read_int()
+for _ in range(T):
+    N = read_int()
+    print(alg(N))

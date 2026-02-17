@@ -1,0 +1,1 @@
+{"name":"Local: cow_checkups","url":"/var/home/zachen/code/usaco/bronze/2025_jan/cow_checkups.py","tests":[{"id":1771044908801,"input":"3\n1 3 2\n3 2 1","output":"3\n3\n0\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/var/home/zachen/code/usaco/bronze/2025_jan/cow_checkups.py","group":"local","local":true}

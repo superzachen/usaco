@@ -30,3 +30,25 @@ def read_ints():
 def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
+
+n = read_int()
+A = read_ints()
+B = read_ints()
+
+Same = sum(1 for i in range(n) if A[i] == B[i])
+ans = [0] * (n + 1)
+
+def expand(i, r):
+    match = Same
+    while i >= 0 and r < n:
+        match += ((A[i] == B[r]) + (A[r] == B[i])) - ((A[i] == B[i]) + (A[r] == B[r]))
+        ans[match] += 1
+        i -= 1
+        r += 1
+
+for mid in range(n):
+    expand(mid, mid)
+    expand(mid, mid + 1)
+
+for answer in ans:
+    print(answer)

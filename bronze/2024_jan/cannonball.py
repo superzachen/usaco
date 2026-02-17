@@ -31,3 +31,25 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+n, x = map(int, input().split())
+pad = [(0, 0)] * (n + 1)
+pad = [tuple(map(int, input().split())) for _ in range(n + 1)]
+pad[0] = (0, 0)  # to keep indexing consistent with C++ code
+
+vis = [False] * (n + 1)
+dir = 1
+power = 1
+ans = 0
+
+for _ in range(5000000):
+    if not (1 <= x <= n):
+        break
+    if pad[x][0] == 1 and power >= pad[x][1] and not vis[x]:
+        vis[x] = True
+        ans += 1
+    if pad[x][0] == 0:
+        dir *= -1
+        power += pad[x][1]
+    x += dir * power
+
+print(ans)

@@ -31,3 +31,11 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+
+N, Q = read_ints()
+c = read_ints()
+t = read_ints()
+diffs = sorted([ci - ti for ci, ti in zip(c, t)], reverse=True)
+for _ in range(Q):
+    V, S = read_ints()
+    print("YES" if (V <= N and (V <= 0 or diffs[V-1] > S)) else "NO")

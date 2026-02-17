@@ -31,3 +31,19 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+n = read_int()
+a = read_ints()
+
+ans = 0
+contribution = 0
+cnt_ops = 0
+for i in range(n):
+    contribution += cnt_ops
+    a[i] += contribution
+
+    cur_ops = -a[i]
+    ans += abs(cur_ops)
+    cnt_ops += cur_ops
+    contribution += cur_ops
+
+print(ans)

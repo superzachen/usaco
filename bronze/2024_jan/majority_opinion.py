@@ -31,3 +31,18 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+def solve(array):
+    result = []
+    for i in range(len(array) - 1):
+        if array[i] == array[i + 1] or (i < len(array) - 2 and array[i] == array[i + 2]):
+            result.append(array[i])
+    result = sorted(list(set(result)))
+    if len(result) == 0:
+        result = [-1]
+    return result
+
+t = read_int()
+for _ in range(t):
+    n = read_int()
+    arr = read_ints()
+    print(*solve(arr))
