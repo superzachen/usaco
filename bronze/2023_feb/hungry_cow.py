@@ -2,7 +2,7 @@
 import sys
 import os
 
-problem_name = "xxx"
+problem_name = "hungry_cow"
 
 input_file = f"{problem_name}.in"
 output_file = f"{problem_name}.out"
@@ -31,3 +31,18 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+N, T = read_ints()
+deliver = []
+for _ in range(N):
+    D, A = read_ints()
+    deliver.append([D, A])
+Ans = 0
+Haybles = 0
+for i in range(1, T+1):
+    for delivery in deliver:
+        if delivery[0] == i:
+            Haybles += (delivery[1])
+    if Haybles >= 1:
+        Ans += 1
+        Haybles -= 1
+print(Ans)
