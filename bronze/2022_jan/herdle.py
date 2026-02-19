@@ -31,3 +31,23 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+def main():
+    correct = input() + input() + input()
+    guess = input() + input() + input()
+    freq_correct = [0] * 26
+    freq_guess = [0] * 26
+    green = 0
+    for j in range(9):
+        if correct[j] == guess[j]:
+            green += 1
+        freq_correct[ord(correct[j]) - ord('A')] += 1
+        freq_guess[ord(guess[j]) - ord('A')] += 1
+    yellow = 0
+    for j in range(26):
+        yellow += min(freq_correct[j], freq_guess[j])
+    yellow -= green
+    print(green)
+    print(yellow)
+
+if __name__ == "__main__":
+    main()

@@ -31,3 +31,35 @@ def read_strs():
     """Reads multiple strings from a line, separated by space."""
     return sys.stdin.readline().split()
 
+def solve(H):
+    N = len(H)
+    f = 0
+    for i in range(N):
+        f += (1 if i % 2 == 0 else -1) * H[i]
+    if N % 2 == 0:
+        if f != 0:
+            return -1
+    else:
+        if f < 0:
+            return -1
+    last_o = 0
+    o = [0] * (N - 1)
+    for i in range(N - 1):
+        last_o = o[i] = H[i] - f - last_o
+        if o[i] < 0:
+            return -1
+    if N % 2 == 0:
+        mn = o[0]
+        for i in range(0, N, 2):
+            mn = min(mn, o[i])
+        for i in range(0, N, 2):
+            o[i] -= mn
+    sum_o = sum(o)
+    return 2 * sum_o
+
+
+t = int(input())
+for _ in range(t):
+    N = int(input())
+    H = list(map(int, input().split()))
+    print(solve(H))
